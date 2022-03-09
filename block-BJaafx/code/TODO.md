@@ -1,6 +1,14 @@
-1. Using loops take 10 inputs from user and find the average of all the numbers.
+1. Using loops take 10 inputs from user and find the average of all the numbers.// 
 
-2. What will be the output of the code below
+let sum = 0;
+function average(num){
+for (leti=0; i <= 10; i++) {
+  prompt +(num) = sum + num;
+}
+console.log(sum/10);
+}
+
+2. What will be the output of the code below //error.
 
 ```js
 let i = 0;
@@ -8,16 +16,60 @@ while (i < 3) {
   println('hi');
   i++;
 }
-```
+``` 
 
-3. Write a function named `getEvenSum` that accepts a parameter `max`. Return the sum of all even numbers. The value of max should default to 10.
+3. Write a function named `getEvenSum` that accepts a parameter `max`. Return the sum of all even numbers. The value of max should default to 10. //
+function getEvensum(max) {
+    let final = 0;
+    for(let i =0; i<=max; i++) {
+       if (i % 2 == 0){
+           final += i;
+       } 
+      
+    }
+    console.log(final);
+  }
 
-4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10.
+  getEvensum();
+
+4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10. //
+function getEvensum(max) {
+    let final = 0;
+    for(let i =0;i<=max; i++) {
+       if (i % 2 !== 0){
+           final += i;
+       } 
+      
+    }
+    console.log(final);
+  }
+
+  getEvensum();
+
 
 5. Write a function named `getProductOfDigits` that accepts a parameter `num`. It returns the product of all the digits in the number.
 
 - If the input value is less than 0 return `not a valid input`
-- For example if the input is `123` output should be `6`.
+- For example if the input is `123` output should be `6`. //
+
+let num="123"
+
+console.log(num.length)
+
+function getProductOfDigits(num){
+
+  let multi=1
+
+  for(let i=0;i<num.length;i++){
+
+    multi+= multi*(+num[i]) 
+
+    console.log(i)
+
+  }
+
+  
+}
 
 6. What will be the output of the following code below in multiple conditions? Explain with reason?
 
@@ -34,9 +86,9 @@ function check(num) {
   return num;
 }
 
-check(10); // output
-check(1); // output
-check(5); // output
+check(10); // bigger than five.
+check(1); // Smaller than 5
+check(5); // 5
 ```
 
 7. What will be the output of the following code given below? Explain the reason?
@@ -48,9 +100,9 @@ function getOutput(name) {
   return 'Who are you';
 }
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
-getOutput(); // what will be the output
+getOutput('Arya'); // 'You are arya'
+getOutput('John'); // 'You are john'
+getOutput(); // 'Who are you'
 ```
 
 8. What will be the output of the following code given below? Explain the reason?
@@ -62,11 +114,11 @@ function getOutput(name) {
   return 'Who are you';
 }
 
-getOutput('Arya'); // what will be the output
-getOutput('John'); // what will be the output
-getOutput(); // what will be the output
+getOutput('Arya'); // You are arya // 'who are you'
+getOutput('John'); // You are john // 'who are you'
+getOutput(); // 'who are you'
 ```
 
-9. Can a function have multiple return statement? Give one example if possible and explain the reason.
+9. Can a function have multiple return statement? Give one example if possible and explain the reason. //fuction can have only one return fuction.
 
-10. What is the difference between `for` loop and `while` loop. What are the different place you can use them? Explain with example.
+10. What is the difference between `for` loop and `while` loop. What are the different place you can use them? Explain with example. // no much difference in whhile and for loop. 
